@@ -24,18 +24,19 @@ class Examen(val nombres: Array<String>) {
         }
     }
 
-    fun promedioGrupo(): Float{
+    fun promedioGrupo(): Float {
         var suma = 0f
-        for (nota in notas){
+        for (nota in notas) {
             suma += nota
         }
         return suma / notas.size
     }
-    fun mayorNota(): String{
+
+    fun mayorNota(): String {
         var maxNota = notas[0]
         var indiceMax = 0
-        for (i in notas.indices){
-            if (notas[i] > maxNota){
+        for (i in notas.indices) {
+            if (notas[i] > maxNota) {
                 maxNota = notas[i]
                 indiceMax = i
             }
