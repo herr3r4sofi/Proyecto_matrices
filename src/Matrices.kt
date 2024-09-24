@@ -59,14 +59,17 @@ class Examen(val nombres: Array<String>) {
         return resultado
     }
 }
+
 fun main() {
-    // Nombres de los estudiantes
     val nombres = arrayOf("Marta", "Pedro", "Juan", "María")
 
-    // Respuestas de los estudiantes
     val respuestasMarta = charArrayOf('a', 'c', 'b', 'a', 'd', 'b', 'b', 'c', 'a', 'a', 'b', 'd')
     val respuestasPedro = charArrayOf('b', 'c', 'b', 'd', 'd', 'b', 'b', 'a', 'b', 'd', 'b', 'd')
     val respuestasJuan = charArrayOf('c', 'c', 'b', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'b', 'c')
     val respuestasMaria = charArrayOf('c', 'c', 'b', 'a', 'd', 'b', 'b', 'c', 'a', 'a', 'b', 'c')
+    val examen = Examen(nombres)
+    examen.leerRespuestas(respuestasMarta)
+    examen.leerRespuestas(respuestasPedro)
+
 
 }
