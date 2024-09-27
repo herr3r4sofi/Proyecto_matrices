@@ -70,6 +70,10 @@ fun main() {
     val examen = Examen(nombres)
     examen.leerRespuestas(respuestasMarta)
     examen.leerRespuestas(respuestasPedro)
+    examen.leerRespuestas(respuestasJuan)
+    examen.leerRespuestas(respuestasMaria)
+    examen.calculaNota()
+    println(examen.toString())
 
 
 }
