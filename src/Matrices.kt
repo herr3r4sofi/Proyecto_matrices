@@ -74,6 +74,4 @@ fun main() {
     examen.leerRespuestas(respuestasMaria)
     examen.calculaNota()
     println(examen.toString())
-
-
 }
